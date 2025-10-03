@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First HTML Project - Home</title>
+
+    <style>
+        /* Basic Reset and Font Setup */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9; /* Light background */
+            color: #333; /* Dark text */
+        }
+
+        /* Header Styling */
+        header {
+            background: #007bff; /* Blue header */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        /* Navigation Styling */
+        .main-nav {
+            background: #333; /* Dark navigation bar */
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .main-nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .main-nav a:hover {
+            background-color: #555;
+        }
+
+        /* Main Content Layout */
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .content-box {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Image Styling */
+        .project-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: #333;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My HTML Project</h1>
+        <p>This is my first static website, a learning exercise!</p>
+    </header>
+
+    <nav class="main-nav">
+        <a href="about.html">Home</a>
+        <a href="forms.html">Form</a>
+        <a href="Table.html">Table</a>
+        <a href="List.html">List</a>
+       <a href="meme.mp4">Video Content</a>
+       
+    </nav>
+    
+    <main>
+        <section class="content-box">
+            <h2>Introduction</h2>
+            <p>This project demonstrates basic HTML elements like forms, tables, lists, and media embedding.</p>
+            <p>Click on the links above to explore the different pages.</p>
+            <img src="project_image.jpg" alt="A generic web development image" class="project-image">
+            <small>[*Viewers stay away manu suarr & my sandy*]</small>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>

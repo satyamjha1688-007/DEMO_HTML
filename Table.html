@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Table Styling */
+        .data-table {
+            width: 80%; /* Takes up 80% of the page width */
+            margin: 0 auto; /* Centers the table */
+            border-collapse: collapse; /* Removes double borders */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+            background-color: white;
+        }
+
+        /* Header Row Styling */
+        .data-table thead {
+            background-color: #007bff; /* Primary blue background */
+            color: white;
+        }
+
+        .data-table th {
+            padding: 15px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        /* Data Cells Styling */
+        .data-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd; /* Light gray line between rows */
+        }
+
+        /* Hover Effect for Rows */
+        .data-table tbody tr:hover {
+            background-color: #e9f5ff; /* Light blue on hover */
+        }
+
+        /* Alternating Row Colors (Zebra Stripping) */
+        .data-table tbody tr:nth-child(even) {
+            background-color: #f8f8f8; /* Very light gray for even rows */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Quarterly Project Status Report</h1>
+
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Project ID</th>
+                <th>Project Name</th>
+                <th>Status</th>
+                <th>Budget Used</th>
+                <th>Due Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>P-101</td>
+                <td>Website Redesign</td>
+                <td>Complete</td>
+                <td>$15,000</td>
+                <td>2025-03-31</td>
+            </tr>
+            <tr>
+                <td>P-102</td>
+                <td>App Feature Update</td>
+                <td>In Progress</td>
+                <td>$8,200</td>
+                <td>2025-06-30</td>
+            </tr>
+            <tr>
+                <td>P-103</td>
+                <td>Internal Tool Upgrade</td>
+                <td>On Hold</td>
+                <td>$1,500</td>
+                <td>2025-09-15</td>
+            </tr>
+            <tr>
+                <td>P-104</td>
+                <td>Marketing Campaign</td>
+                <td>Complete</td>
+                <td>$12,500</td>
+                <td>2025-04-30</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Active Projects: 3</td>
+                <td colspan="2">Total Budget Reported: $37,200</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
